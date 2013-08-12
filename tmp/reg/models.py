@@ -1,18 +1,16 @@
 from django.db import models
-
+from django.contrib.auth.models import User
 class Country(models.Model):
 	"""List of countires"""
 	name = models.CharField(max_length=30)
-	def __init__(self, name):
-		super(Country, self).__init__()
-		self.name = name
+	def __unicode__(self):
+        return self.name
 
 class TimeZone(models.Model):
 	"""List of Time zones"""
 	name = models.CharField(max_length=5)
-	def __init__(self, name):
-		super(TimeZone, self).__init__()
-		self.name = name
+	def __unicode__(self):
+        return self.name
 
 class CustomerType(models.Model):
 	"""List of customer types"""
@@ -33,12 +31,8 @@ class Paypal(models.Model):
 
 class Supplier(models.Model):
 	"""Supplier info"""
-	username = models.CharField(max_length=100)
-	firstname = models.CharField(max_length=100)
-	lastname = models.CharField(max_length=100)
-	password = models.CharField(max_length=200)
+	user = models.OneToOneField(User)
 	phone = models.CharField(max_length=20)
-	email = models.EmailField(max_length=75)	
 	qq = models.CharField(max_length=20)
 	msn = models.EmailField(max_length=75)
 	ym = models.CharField(max_length=100)
@@ -51,14 +45,15 @@ class Supplier(models.Model):
 	pin = models.CharField(max_length=4)
 	locked = models.BooleanField()		
 
+	def _get_full_name(self):
+        "Returns the person's full name."
+        return '%s %s' % (self.first_name, self.last_name)
+    full_name = property(_get_full_name)
+
 class Customer(models.Model):
 	"""Customer infos"""
-	username = models.CharField(max_length=100)
-	firstname = models.CharField(max_length=100)
-	lastname = models.CharField(max_length=100)
-	password = models.CharField(max_length=200)
+	user = models.OneToOneField(User)
 	phone = models.CharField(max_length=20)
-	email = models.EmailField(max_length=75)
 	qq = models.CharField(max_length=20)
 	msn = models.EmailField(max_length=75)
 	ym = models.CharField(max_length=100)
@@ -69,14 +64,16 @@ class Customer(models.Model):
 	c_type = models.ForeignKey(CustomerType)
 	link_supplier = models.ForeignKey(Supplier, null=True, blank=True)
 	locked = models.BooleanField()
+	def _get_full_name(self):
+        "Returns the person's full name."
+        return '%s %s' % (self.firstname, self.lastname)
+    full_name = property(_get_full_name)
 
 class Admin(models.Model):
 	"""Admin infos"""
+	user = models.OneToOneField(User)
 	ADMIN_TYPE = (
 		('REG', 'Regular'),
 		('SUP', 'Supper'),
 		)
-	username = models.CharField(max_length=100)
-	password = models.CharField(max_length=200)
-	email = models.EmailField(max_length=75)
 	a_type = models.CharField(max_length=3, choices=ADMIN_TYPE)
