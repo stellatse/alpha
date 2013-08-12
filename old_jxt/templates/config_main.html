@@ -1,0 +1,98 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<link rel="stylesheet" href="../static/style.css" type="text/css" media="screen" charset="utf-8" />
+	<title>Service Manager Lite</title>
+</head>
+<body>
+		<div class="logo">
+		<a href="">Service Manager Lite -Core</a>
+		</div>
+		<div class="nav" id="maia-nav-x">
+				<div class="tab">
+				<div class="logout">
+				<a href="/logout">登出</a>
+				</div>
+				
+				<ul>
+				<li class="p1"><a href="/todo">服务台</a></li>
+				<li class="p2"><a href="/config">配置管理</a></li>
+				<li class="p3"><a href="/change">变更管理</a></li>
+				<li class="p4"><a href="/problem">问题管理</a></li>
+				<li class="p5"><a href="/help">帮助</a></li>
+				<ul>
+				</div>
+		</div>	
+			
+			
+			<div class="main">
+			<div class="welcome">
+				
+				<ul>
+				<li class="p1"><a href="/config">用户配置</a></li>
+				<li class="p2"><a href="/event">设备管理</a></li>
+				<li class="p3"><a href="/performance">服务类别</a></li>
+				<li class="p4"><a href="">系统设置</a></li>
+				<ul>
+				
+			</div>
+			<div class="configuration">
+				<div id='config'>
+				<h2>配置管理</h2>
+					<form action= "${request.route_url('add_user')}" method = "POST">
+						<label>Contact Email:</label>
+						<input name="email" type="text" placeholder="Email" />
+						<label for="pass">Password</label>
+						<input name="pass" type="password" placeholder="Password"/>
+					
+						<br/>
+						<input type="submit"  name="form.submitted" value="Submit"/>
+					</form>
+				</div>		
+				
+				<div id='to-do'>
+				<h2>Ticket Lists</h2>
+						<table id="meters" >
+							<thead>
+								<tr>
+									<th>Ticket ID</th>
+									<th>Type</th>
+									<th>Title</th>
+									<th>Description</th>
+									
+									<th>Status</th>
+									<th>Command</th>
+									
+								</tr>
+							</thead>
+							<tbody>
+							
+							% for ticket in tickets:
+								<tr>
+									<td><a href="" style="float:left; margin:auto auto">${ticket.id}</a></td>
+									<td>${ticket.type}</td>
+									<td>${ticket.title}</td>
+									<td>${ticket.detail}</td>
+									<td>${ticket.detail}</td>
+									<td>${ticket.status}</td>
+									<td><a href="" style="float:left; margin:auto auto">View</a></td>
+									
+								</tr>
+							% endfor
+									
+									
+							</tbody>
+						</table>
+				</div>
+			</div>
+			<div class="foot">
+				<p>&copy;2012-2012 Stella Xie All rights reserved.
+					<a href="/">Contact us</a>
+				</p>
+			</div>
+		</div>
+		
+</body>
+</html>
+

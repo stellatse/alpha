@@ -1,5 +1,5 @@
 from django.db import models
-from register.models import Customer, Supplier
+from register.models import Customer, Supplier, Admin
 import os.path
 
 FILEDIR=os.path.join(os.path.dirname(__file__), 'files').replace('\\','/')
@@ -55,6 +55,8 @@ class Task(models.Model):
 	objection_time = models.DateTimeField(null=True, blank=True)
 	retracted = models.BooleanField()
 	retract_reason = models.TextField(null=True, blank=True)
+	comment = models.TextField(null=True, blank=True)
+	final_price = models.FloatField()
 
 class Files(models.Model):
 	"""Store all the file path of tasks, including submit file and feedback file"""
@@ -67,13 +69,25 @@ class Files(models.Model):
 	file_type = models.CharField(max_length=20)
 	file_tag = models.CharField(max_length=3, choices=FILE_TAG_CHOICES)
 	task = models.ForeignKey(Task)
-	def __init__(self, path, name, file_type, file_tag):
-		super(Files, self).__init__()
-		self.path = path
-		self.name = name
-		self.file_type = file_type
-		self.file_tag = file_tag
-		
 
-		
-		
+class PriceHistory(models.Model):
+	"""Store all the price updated record"""
+	PRICE_TYPE = (
+		('INC', 'Increase'),
+		('DEC', 'Decrease'),
+		)
+	OPERATOR_TYPE = (
+		('ADM', 'Admin'),
+		('CUS', 'Customer'),
+		('SUP', 'Supplier'),
+		)
+	task = models.ForeignKey(Task)
+	p_type = models.CharField(max_length=3, choices=PRICE_TYPE)
+	value = models.FloatField()
+	operator_type = models.CharField(max_length=3, choices=OPERATOR_TYPE)
+	customer = models.ForeignKey(Customer)
+	supplier = models.ForeignKey(Supplier)
+	admin = models.ForeignKey(Admin)
+	update_time = models.DateTimeField(auto_now=True)
+	
+						
