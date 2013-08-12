@@ -42,7 +42,6 @@ class Task(models.Model):
 	task_type = models.ForeignKey(TaskType)
 	service = models.ForeignKey(Service)
 	imei = models.CharField(max_length=400)
-	file_path = models.FileField(upload_to=FILEDIR)
 	customer = models.ForeignKey(Customer)
 	submit_time = models.DateTimeField(auto_now_add=True)
 	supplier = models.ForeignKey(Supplier, null=True, blank=True)
@@ -57,6 +56,24 @@ class Task(models.Model):
 	retracted = models.BooleanField()
 	retract_reason = models.TextField(null=True, blank=True)
 
+class Files(models.Model):
+	"""Store all the file path of tasks, including submit file and feedback file"""
+	FILE_TAG_CHOICES = (
+		('REQ', 'Request'),
+		('RES', 'Response'),
+		)
+	name = models.CharField(max_length=200)
+	path = models.FileField(upload_to=FILEDIR)
+	file_type = models.CharField(max_length=20)
+	file_tag = models.CharField(max_length=3, choices=FILE_TAG_CHOICES)
+	task = models.ForeignKey(Task)
+	def __init__(self, path, name, file_type, file_tag):
+		super(Files, self).__init__()
+		self.path = path
+		self.name = name
+		self.file_type = file_type
+		self.file_tag = file_tag
+		
 
 		
 		
