@@ -6,6 +6,6 @@ admin.autodiscover()
 
 urlpatterns = patterns('',
     url(r'^$', unk.views.home, name='home'),
-    url(r'^register/', include('unk.register.urls')),
+    url(r'^account/', include('unk.account.urls')),
     url(r'^admin/', include(admin.site.urls)),
 )
