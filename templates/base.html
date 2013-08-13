@@ -37,9 +37,14 @@ body {
 								<li class="nav-header">Nav header</li>
 								<li><a href="#">Separated link</a></li>
 								<li><a href="#">One more separated link</a></li>
-							</ul></li>
+							</ul>
+						</li>
 					</ul>
-					<form class="navbar-form pull-right">
+
+					<form method="post"
+						    action="{% url 'django.contrib.auth.views.login' %}"
+						    class="navbar-form pull-right">
+						    {% csrf_token %}
 						<input class="span2" type="text" placeholder="Email"> <input
 							class="span2" type="password" placeholder="Password">
 						<button type="submit" class="btn">Sign in</button>
