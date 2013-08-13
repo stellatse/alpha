@@ -10,6 +10,7 @@ establish a fresh development environment.
 install required tools and libraries
 
     pip install django
+    pip install django-bootstrap-toolkit
     pip install djangorestframework
 
 

@@ -116,7 +116,6 @@ TEMPLATE_DIRS = (
 )
 
 INSTALLED_APPS = (
-    'rest_framework',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -127,6 +126,8 @@ INSTALLED_APPS = (
     'django.contrib.admin',
     # Uncomment the next line to enable admin documentation:
     'django.contrib.admindocs',
+    'rest_framework',
+    'bootstrap_toolkit',
     'unk.registration',
 )
 
