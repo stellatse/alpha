@@ -1,17 +1,18 @@
 from django.db import models
 from django.contrib.auth.models import User
+
 class Country(models.Model):
 	"""List of countires"""
 	name = models.CharField(max_length=30)
 	def __unicode__(self):
-        return self.name
+		return self.name
 
 class TimeZone(models.Model):
 	"""List of Time zones"""
 	name = models.CharField(max_length=5)
 
 	def __unicode__(self):
-        return self.name
+		return self.name
 
 class CustomerType(models.Model):
 	"""List of customer types"""
@@ -47,9 +48,9 @@ class Supplier(models.Model):
 	locked = models.BooleanField()		
 
 	def _get_full_name(self):
-        "Returns the person's full name."
-        return '%s %s' % (self.first_name, self.last_name)
-    full_name = property(_get_full_name)
+		return '%s %s' % (self.first_name, self.last_name)
+	
+	full_name = property(_get_full_name)
 
 class Customer(models.Model):
 	"""Customer infos"""
@@ -66,9 +67,8 @@ class Customer(models.Model):
 	link_supplier = models.ForeignKey(Supplier, null=True, blank=True)
 	locked = models.BooleanField(default=False)
 	def _get_full_name(self):
-        "Returns the person's full name."
-        return '%s %s' % (self.first_name, self.last_name)
-    full_name = property(_get_full_name)
+		return '%s %s' % (self.first_name, self.last_name)
+	full_name = property(_get_full_name)
 
 class Admin(models.Model):
 	"""Admin infos"""
