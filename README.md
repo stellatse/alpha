@@ -13,6 +13,9 @@ install required tools and libraries
     pip install djangorestframework
 
 
-Then checkout the latest source code
+Then checkout the latest source code, and start the site
 
     git clone https://github.com/stellatse/alpha.git
+    cd alpha
+    python manage.py syncdb
+    python manage.py runserver
