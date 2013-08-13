@@ -24,13 +24,26 @@ class ServiceCategory(models.Model):
 	"""ServiceCategory, eg. Nokia,SL3(LBF)"""
 	name = models.CharField(max_length=200)
 
+class Currency(models.Model):
+	"""Currency list"""
+	name = models.CharField(max_length=20)
+	code = models.CharField(max_length=3) 
+	symbol = models.CharField(max_length=5)
+	def __init__(self, name, code, symbol):
+		super(Currency, self).__init__()
+		self.name = name
+		self.code = code
+		self.symbol = symbol
+		
+
 class Service(models.Model):
-	"""Service all""", 
+	"""Service all"""
 	name = models.CharField(max_length=200)
 	description = models.CharField(max_length=500)
 	task_type = models.ForeignKey(TaskType)
 	category = models.ForeignKey(ServiceCategory)
 	value = models.IntegerField()
+	currency = models.ForeignKey(Currency)
 	commit_time_from = models.IntegerField()
 	commit_time_to = models.IntegerField()
 	parameter = models.ForeignKey(Parameter)

@@ -9,6 +9,7 @@ class Country(models.Model):
 class TimeZone(models.Model):
 	"""List of Time zones"""
 	name = models.CharField(max_length=5)
+
 	def __unicode__(self):
         return self.name
 
@@ -63,10 +64,10 @@ class Customer(models.Model):
 	timezone = models.ForeignKey(TimeZone)
 	c_type = models.ForeignKey(CustomerType)
 	link_supplier = models.ForeignKey(Supplier, null=True, blank=True)
-	locked = models.BooleanField()
+	locked = models.BooleanField(default=False)
 	def _get_full_name(self):
         "Returns the person's full name."
-        return '%s %s' % (self.firstname, self.lastname)
+        return '%s %s' % (self.first_name, self.last_name)
     full_name = property(_get_full_name)
 
 class Admin(models.Model):
