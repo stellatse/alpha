@@ -3,12 +3,12 @@
 {% load admin_urls %}
 
 {% block breadcrumbs %}
-<div class="breadcrumbs">
-<a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
-&rsaquo; <a href="{% url 'admin:app_list' app_label=app_label %}">{{ app_label|capfirst|escape }}</a>
-&rsaquo; <a href="{% url opts|admin_urlname:'changelist' %}">{{ opts.verbose_name_plural|capfirst }}</a>
-&rsaquo; {% trans 'Delete multiple objects' %}
-</div>
+<ul class="breadcrumb">
+<li><a href="{% url 'admin:index' %}">{% trans 'Home' %}</a><span class="divider">/</span></li>
+<li><a href="{% url 'admin:app_list' app_label=app_label %}">{{ app_label|capfirst|escape }}</a><span class="divider">/</span></li>
+<li><a href="{% url opts|admin_urlname:'changelist' %}">{{ opts.verbose_name_plural|capfirst }}</a><span class="divider">/</span></li>
+<li>{% trans 'Delete multiple objects' %}</li>
+</ul>
 {% endblock %}
 
 {% block content %}
@@ -30,18 +30,19 @@
         </ul>
     {% endif %}
 {% else %}
-    <p>{% blocktrans %}Are you sure you want to delete the selected {{ objects_name }}? All of the following objects and their related items will be deleted:{% endblocktrans %}</p>
+    <p class="alert">{% blocktrans %}Are you sure you want to delete the selected {{ objects_name }}? All of the following objects and their related items will be deleted:{% endblocktrans %}</p>
     {% for deletable_object in deletable_objects %}
         <ul>{{ deletable_object|unordered_list }}</ul>
     {% endfor %}
-    <form action="" method="post">{% csrf_token %}
+    <form action="" method="post">
+    {% csrf_token %}
     <div>
     {% for obj in queryset %}
     <input type="hidden" name="{{ action_checkbox_name }}" value="{{ obj.pk|unlocalize }}" />
     {% endfor %}
     <input type="hidden" name="action" value="delete_selected" />
     <input type="hidden" name="post" value="yes" />
-    <input type="submit" value="{% trans "Yes, I'm sure" %}" />
+    <input type="submit" value="{% trans "Yes, I'm sure" %}" class="btn btn-primary" />
     </div>
     </form>
 {% endif %}

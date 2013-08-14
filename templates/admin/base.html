@@ -30,44 +30,32 @@ body {
       <div class="navbar-inner">
         <div class="container-fluid">
 	        <div class="brand">{% block branding %}{% endblock %}</div>
+	            
           <div class="nav-collapse collapse">
             <ul class="nav">
-	           <li><a href="#">Home</a></li>
-	           <li><a href="#">About</a></li>
+             <li><a href="#">Home</a></li>
+             <li><a href="#">About</a></li>
             </ul>
-            
-            {% if user.is_active and user.is_staff %}
-            <p class="navbar-text pull-right">
-              Logged in as 
-              <strong>
-              {% filter force_escape %}{% firstof user.get_short_name user.get_username %}{% endfilter %}
-              </strong>
-              / <a href="{% url 'admin:logout' %}">{% trans 'Log out' %}</a>
-            </p>
-            {% endif %}
-            
-            <!-- 
-            <li class="dropdown">
+            <ul class="nav pull-right">
+             <li class="dropdown">
                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                {% filter force_escape %}{% firstof user.get_short_name user.get_username %}{% endfilter %}
+                Logged in as <strong>{% filter force_escape %}{% firstof user.get_short_name user.get_username %}{% endfilter %}</strong>
                 <b class="caret"></b>
                </a>
-                  <ul class="dropdown-menu">
-                    {% if user.has_usable_password %}
-                    <li><a href="{% url 'admin:password_change' %}">{% trans 'Change password' %}</a></li>
-                    {% endif %}
-                    <li><a href="{% url 'admin:logout' %}">{% trans 'Log out' %}</a></li>
-                    <li class="divider"></li>
-                    <li class="nav-header">Help links</li>
-                    {% if docsroot %}
-                      <li><a href="{{ docsroot }}">{% trans 'Documentation' %}</a></li>
-                    {% endif %}
-                    <li><a href="#">{% url 'django-admindocs-docroot' as docsroot %}</a></li>
-                  </ul>
-                </li>
-            
-            
-             -->
+               <ul class="dropdown-menu">
+                 {% if user.has_usable_password %}
+                 <li><a href="{% url 'admin:password_change' %}">{% trans 'Change password' %}</a></li>
+                 {% endif %}
+                 <li><a href="{% url 'admin:logout' %}">{% trans 'Log out' %}</a></li>
+                 <li class="divider"></li>
+                 <li class="nav-header">Document links</li>
+                 {% if docsroot %}
+                   <li><a href="{{ docsroot }}">{% trans 'Documentation' %}</a></li>
+                 {% endif %}
+                 <li><a href="#">{% url 'django-admindocs-docroot' as docsroot %}</a></li>
+               </ul>
+              </li>
+            </ul>
           </div>
 	        </div>
         </div>
@@ -101,7 +89,9 @@ body {
         {% endblock %}
         {% block sidebar %}{% endblock %}
      </div>
-    {% block footer %}<footer><p>&copy; Company 2013</p></footer>{% endblock %}
+    {% block footer %}
+    <hr />
+    <footer><p>&copy; Company 2013</p></footer>{% endblock %}
     </div>
     <!-- END Content -->
 
