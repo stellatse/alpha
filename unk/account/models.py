@@ -1,5 +1,5 @@
 from django.db import models
-from registration.models import Customer, Supplier, Admin
+from unk.registration.models import Customer, Supplier, Admin
 import os.path
 
 

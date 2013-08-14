@@ -129,6 +129,8 @@ INSTALLED_APPS = (
     'rest_framework',
     'bootstrap_toolkit',
     'unk.registration',
+    'unk.task',
+    'unk.account',
 )
 
 # A sample logging configuration. The only tangible logging

@@ -1,5 +1,5 @@
 from django.db import models
-from registration.models import Customer, Supplier
+from unk.registration.models import Customer, Supplier
 import os.path
 
 FILEDIR=os.path.join(os.path.dirname(__file__), 'files').replace('\\','/')
