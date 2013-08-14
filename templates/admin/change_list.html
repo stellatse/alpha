@@ -4,7 +4,6 @@
 
 {% block extrastyle %}
   {{ block.super }}
-  <link rel="stylesheet" type="text/css" href="{% static "admin/css/changelists.css" %}" />
   {% if cl.formset %}
     <link rel="stylesheet" type="text/css" href="{% static "admin/css/forms.css" %}" />
   {% endif %}
@@ -37,18 +36,17 @@
 
 {% if not is_popup %}
 {% block breadcrumbs %}
-<div class="breadcrumbs">
-<a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
-&rsaquo; <a href="{% url 'admin:app_list' app_label=cl.opts.app_label %}">{{ app_label|capfirst|escape }}</a>
-&rsaquo; {{ cl.opts.verbose_name_plural|capfirst }}
-</div>
+<ul class="breadcrumb">
+<li><a href="{% url 'admin:index' %}">{% trans 'Home' %}</a><span class="divider">/</span></li>
+<li><a href="{% url 'admin:app_list' app_label=cl.opts.app_label %}">{{ app_label|capfirst|escape }}</a><span class="divider">/</span></li>
+<li>{{ cl.opts.verbose_name_plural|capfirst }}</li>
+</ul>
 {% endblock %}
 {% endif %}
 
 {% block coltype %}flex{% endblock %}
 
 {% block content %}
-  <div id="content-main">
     {% block object-tools %}
       {% if has_add_permission %}
         <ul class="object-tools">
@@ -63,23 +61,16 @@
       {% endif %}
     {% endblock %}
     {% if cl.formset.errors %}
-        <p class="errornote">
+        <p class="alert alert-error">
         {% blocktrans count cl.formset.errors|length as counter %}Please correct the error below.{% plural %}Please correct the errors below.{% endblocktrans %}
         </p>
         {{ cl.formset.non_form_errors }}
     {% endif %}
     <div class="module{% if cl.has_filters %} filtered{% endif %}" id="changelist">
+    <div class="span9">
       {% block search %}{% search_form cl %}{% endblock %}
       {% block date_hierarchy %}{% date_hierarchy cl %}{% endblock %}
 
-      {% block filters %}
-        {% if cl.has_filters %}
-          <div id="changelist-filter">
-            <h2>{% trans 'Filter' %}</h2>
-            {% for spec in cl.filter_specs %}{% admin_list_filter cl spec %}{% endfor %}
-          </div>
-        {% endif %}
-      {% endblock %}
 
       <form id="changelist-form" action="" method="post"{% if cl.formset.is_multipart %} enctype="multipart/form-data"{% endif %}>{% csrf_token %}
       {% if cl.formset %}
@@ -93,6 +84,18 @@
       {% endblock %}
       {% block pagination %}{% pagination cl %}{% endblock %}
       </form>
+      </div>
+      
+      {% block filters %}
+        <div class="span3 well">
+        
+        {% if cl.has_filters %}
+          <div id="changelist-filter">
+            <h2>{% trans 'Filter' %}</h2>
+            {% for spec in cl.filter_specs %}{% admin_list_filter cl spec %}{% endfor %}
+          </div>
+        {% endif %}
+        </div>
+      {% endblock %}
     </div>
-  </div>
 {% endblock %}
