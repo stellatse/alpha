@@ -2,10 +2,10 @@
 {% load i18n %}
 
 {% block breadcrumbs %}
-<div class="breadcrumbs">
-<a href="{% url 'admin:index' %}">{% trans 'Home' %}</a>
-&rsaquo; {% trans 'Server error' %}
-</div>
+<ul class="breadcrumb">
+<li><a href="{% url 'admin:index' %}">{% trans 'Home' %}</a><span class="divider">/</span></li>
+<li>{% trans 'Server error' %}</li>
+</ul>
 {% endblock %}
 
 {% block title %}{% trans 'Server error (500)' %}{% endblock %}

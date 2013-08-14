@@ -86,16 +86,15 @@
       </form>
       </div>
       
-      {% block filters %}
-        <div class="span3 well">
-        
+      {% block filters %}        
         {% if cl.has_filters %}
+        <div class="span3 well">
           <div id="changelist-filter">
             <h2>{% trans 'Filter' %}</h2>
             {% for spec in cl.filter_specs %}{% admin_list_filter cl spec %}{% endfor %}
           </div>
-        {% endif %}
         </div>
+        {% endif %}
       {% endblock %}
     </div>
 {% endblock %}
