@@ -1,6 +1,6 @@
 from django.db import models
 from django.contrib.auth.models import User
-
+from django.utils.translation import ugettext_lazy as _, pgettext_lazy
 class Country(models.Model):
     """
     International Organization for Standardization (ISO) 3166-1 Country list.
