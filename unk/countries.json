@@ -1,7 +1,7 @@
 [
     {
         "pk": "GB", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "GBR", 
             "name": "UNITED KINGDOM", 
@@ -13,7 +13,7 @@
     }, 
     {
         "pk": "AF", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "AFG", 
             "name": "AFGHANISTAN", 
@@ -25,7 +25,7 @@
     }, 
     {
         "pk": "AX", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "ALA", 
             "name": "ALAND ISLANDS", 
@@ -37,7 +37,7 @@
     }, 
     {
         "pk": "AL", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "ALB", 
             "name": "ALBANIA", 
@@ -49,7 +49,7 @@
     }, 
     {
         "pk": "DZ", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "DZA", 
             "name": "ALGERIA", 
@@ -61,7 +61,7 @@
     }, 
     {
         "pk": "AS", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "ASM", 
             "name": "AMERICAN SAMOA", 
@@ -73,7 +73,7 @@
     }, 
     {
         "pk": "AD", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "AND", 
             "name": "ANDORRA", 
@@ -85,7 +85,7 @@
     }, 
     {
         "pk": "AO", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "AGO", 
             "name": "ANGOLA", 
@@ -97,7 +97,7 @@
     }, 
     {
         "pk": "AI", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "AIA", 
             "name": "ANGUILLA", 
@@ -109,7 +109,7 @@
     }, 
     {
         "pk": "AQ", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "ATA", 
             "name": "ANTARCTICA", 
@@ -121,7 +121,7 @@
     }, 
     {
         "pk": "AG", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "ATG", 
             "name": "ANTIGUA AND BARBUDA", 
@@ -133,7 +133,7 @@
     }, 
     {
         "pk": "AR", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "ARG", 
             "name": "ARGENTINA", 
@@ -145,7 +145,7 @@
     }, 
     {
         "pk": "AM", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "ARM", 
             "name": "ARMENIA", 
@@ -157,7 +157,7 @@
     }, 
     {
         "pk": "AW", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "ABW", 
             "name": "ARUBA", 
@@ -169,7 +169,7 @@
     }, 
     {
         "pk": "AU", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "AUS", 
             "name": "AUSTRALIA", 
@@ -181,7 +181,7 @@
     }, 
     {
         "pk": "AT", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "AUT", 
             "name": "AUSTRIA", 
@@ -193,7 +193,7 @@
     }, 
     {
         "pk": "AZ", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "AZE", 
             "name": "AZERBAIJAN", 
@@ -205,7 +205,7 @@
     }, 
     {
         "pk": "BS", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "BHS", 
             "name": "BAHAMAS", 
@@ -217,7 +217,7 @@
     }, 
     {
         "pk": "BH", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "BHR", 
             "name": "BAHRAIN", 
@@ -229,7 +229,7 @@
     }, 
     {
         "pk": "BD", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "BGD", 
             "name": "BANGLADESH", 
@@ -241,7 +241,7 @@
     }, 
     {
         "pk": "BB", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "BRB", 
             "name": "BARBADOS", 
@@ -253,7 +253,7 @@
     }, 
     {
         "pk": "BY", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "BLR", 
             "name": "BELARUS", 
@@ -265,7 +265,7 @@
     }, 
     {
         "pk": "BE", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "BEL", 
             "name": "BELGIUM", 
@@ -277,7 +277,7 @@
     }, 
     {
         "pk": "BZ", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "BLZ", 
             "name": "BELIZE", 
@@ -289,7 +289,7 @@
     }, 
     {
         "pk": "BJ", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "BEN", 
             "name": "BENIN", 
@@ -301,7 +301,7 @@
     }, 
     {
         "pk": "BM", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "BMU", 
             "name": "BERMUDA", 
@@ -313,7 +313,7 @@
     }, 
     {
         "pk": "BT", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "BTN", 
             "name": "BHUTAN", 
@@ -325,7 +325,7 @@
     }, 
     {
         "pk": "BO", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "BOL", 
             "name": "BOLIVIA", 
@@ -337,7 +337,7 @@
     }, 
     {
         "pk": "BA", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "BIH", 
             "name": "BOSNIA AND HERZEGOVINA", 
@@ -349,7 +349,7 @@
     }, 
     {
         "pk": "BW", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "BWA", 
             "name": "BOTSWANA", 
@@ -361,7 +361,7 @@
     }, 
     {
         "pk": "BV", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "BVT", 
             "name": "BOUVET ISLAND", 
@@ -373,7 +373,7 @@
     }, 
     {
         "pk": "BR", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "BRA", 
             "name": "BRAZIL", 
@@ -385,7 +385,7 @@
     }, 
     {
         "pk": "IO", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "IOT", 
             "name": "BRITISH INDIAN OCEAN TERRITORY", 
@@ -397,7 +397,7 @@
     }, 
     {
         "pk": "BN", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "BRN", 
             "name": "BRUNEI DARUSSALAM", 
@@ -409,7 +409,7 @@
     }, 
     {
         "pk": "BG", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "BGR", 
             "name": "BULGARIA", 
@@ -421,7 +421,7 @@
     }, 
     {
         "pk": "BF", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "BFA", 
             "name": "BURKINA FASO", 
@@ -433,7 +433,7 @@
     }, 
     {
         "pk": "BI", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "BDI", 
             "name": "BURUNDI", 
@@ -445,7 +445,7 @@
     }, 
     {
         "pk": "KH", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "KHM", 
             "name": "CAMBODIA", 
@@ -457,7 +457,7 @@
     }, 
     {
         "pk": "CM", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "CMR", 
             "name": "CAMEROON", 
@@ -469,7 +469,7 @@
     }, 
     {
         "pk": "CA", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "CAN", 
             "name": "CANADA", 
@@ -481,7 +481,7 @@
     }, 
     {
         "pk": "CV", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "CPV", 
             "name": "CAPE VERDE", 
@@ -493,7 +493,7 @@
     }, 
     {
         "pk": "KY", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "CYM", 
             "name": "CAYMAN ISLANDS", 
@@ -505,7 +505,7 @@
     }, 
     {
         "pk": "CF", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "CAF", 
             "name": "CENTRAL AFRICAN REPUBLIC", 
@@ -517,7 +517,7 @@
     }, 
     {
         "pk": "TD", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "TCD", 
             "name": "CHAD", 
@@ -529,7 +529,7 @@
     }, 
     {
         "pk": "CL", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "CHL", 
             "name": "CHILE", 
@@ -541,7 +541,7 @@
     }, 
     {
         "pk": "CN", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "CHN", 
             "name": "CHINA", 
@@ -553,7 +553,7 @@
     }, 
     {
         "pk": "CX", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "CXR", 
             "name": "CHRISTMAS ISLAND", 
@@ -565,7 +565,7 @@
     }, 
     {
         "pk": "CC", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "CCK", 
             "name": "COCOS (KEELING) ISLANDS", 
@@ -577,7 +577,7 @@
     }, 
     {
         "pk": "CO", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "COL", 
             "name": "COLOMBIA", 
@@ -589,7 +589,7 @@
     }, 
     {
         "pk": "KM", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "COM", 
             "name": "COMOROS", 
@@ -601,7 +601,7 @@
     }, 
     {
         "pk": "CG", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "COG", 
             "name": "CONGO", 
@@ -613,7 +613,7 @@
     }, 
     {
         "pk": "CD", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "COD", 
             "name": "CONGO, THE DEMOCRATIC REPUBLIC OF THE", 
@@ -625,7 +625,7 @@
     }, 
     {
         "pk": "CK", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "COK", 
             "name": "COOK ISLANDS", 
@@ -637,7 +637,7 @@
     }, 
     {
         "pk": "CR", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "CRI", 
             "name": "COSTA RICA", 
@@ -649,7 +649,7 @@
     }, 
     {
         "pk": "CI", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "CIV", 
             "name": "COTE D'IVOIRE", 
@@ -661,7 +661,7 @@
     }, 
     {
         "pk": "HR", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "HRV", 
             "name": "CROATIA", 
@@ -673,7 +673,7 @@
     }, 
     {
         "pk": "CU", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "CUB", 
             "name": "CUBA", 
@@ -685,7 +685,7 @@
     }, 
     {
         "pk": "CY", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "CYP", 
             "name": "CYPRUS", 
@@ -697,7 +697,7 @@
     }, 
     {
         "pk": "CZ", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "CZE", 
             "name": "CZECH REPUBLIC", 
@@ -709,7 +709,7 @@
     }, 
     {
         "pk": "DK", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "DNK", 
             "name": "DENMARK", 
@@ -721,7 +721,7 @@
     }, 
     {
         "pk": "DJ", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "DJI", 
             "name": "DJIBOUTI", 
@@ -733,7 +733,7 @@
     }, 
     {
         "pk": "DM", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "DMA", 
             "name": "DOMINICA", 
@@ -745,7 +745,7 @@
     }, 
     {
         "pk": "DO", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "DOM", 
             "name": "DOMINICAN REPUBLIC", 
@@ -757,7 +757,7 @@
     }, 
     {
         "pk": "EC", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "ECU", 
             "name": "ECUADOR", 
@@ -769,7 +769,7 @@
     }, 
     {
         "pk": "EG", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "EGY", 
             "name": "EGYPT", 
@@ -781,7 +781,7 @@
     }, 
     {
         "pk": "SV", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "SLV", 
             "name": "EL SALVADOR", 
@@ -793,7 +793,7 @@
     }, 
     {
         "pk": "GQ", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "GNQ", 
             "name": "EQUATORIAL GUINEA", 
@@ -805,7 +805,7 @@
     }, 
     {
         "pk": "ER", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "ERI", 
             "name": "ERITREA", 
@@ -817,7 +817,7 @@
     }, 
     {
         "pk": "EE", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "EST", 
             "name": "ESTONIA", 
@@ -829,7 +829,7 @@
     }, 
     {
         "pk": "ET", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "ETH", 
             "name": "ETHIOPIA", 
@@ -841,7 +841,7 @@
     }, 
     {
         "pk": "FK", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "FLK", 
             "name": "FALKLAND ISLANDS (MALVINAS)", 
@@ -853,7 +853,7 @@
     }, 
     {
         "pk": "FO", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "FRO", 
             "name": "FAROE ISLANDS", 
@@ -865,7 +865,7 @@
     }, 
     {
         "pk": "FJ", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "FJI", 
             "name": "FIJI", 
@@ -877,7 +877,7 @@
     }, 
     {
         "pk": "FI", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "FIN", 
             "name": "FINLAND", 
@@ -889,7 +889,7 @@
     }, 
     {
         "pk": "FR", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "FRA", 
             "name": "FRANCE", 
@@ -901,7 +901,7 @@
     }, 
     {
         "pk": "GF", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "GUF", 
             "name": "FRENCH GUIANA", 
@@ -913,7 +913,7 @@
     }, 
     {
         "pk": "PF", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "PYF", 
             "name": "FRENCH POLYNESIA", 
@@ -925,7 +925,7 @@
     }, 
     {
         "pk": "TF", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "ATF", 
             "name": "FRENCH SOUTHERN TERRITORIES", 
@@ -937,7 +937,7 @@
     }, 
     {
         "pk": "GA", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "GAB", 
             "name": "GABON", 
@@ -949,7 +949,7 @@
     }, 
     {
         "pk": "GM", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "GMB", 
             "name": "GAMBIA", 
@@ -961,7 +961,7 @@
     }, 
     {
         "pk": "GE", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "GEO", 
             "name": "GEORGIA", 
@@ -973,7 +973,7 @@
     }, 
     {
         "pk": "DE", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "DEU", 
             "name": "GERMANY", 
@@ -985,7 +985,7 @@
     }, 
     {
         "pk": "GH", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "GHA", 
             "name": "GHANA", 
@@ -997,7 +997,7 @@
     }, 
     {
         "pk": "GI", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "GIB", 
             "name": "GIBRALTAR", 
@@ -1009,7 +1009,7 @@
     }, 
     {
         "pk": "GR", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "GRC", 
             "name": "GREECE", 
@@ -1021,7 +1021,7 @@
     }, 
     {
         "pk": "GL", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "GRL", 
             "name": "GREENLAND", 
@@ -1033,7 +1033,7 @@
     }, 
     {
         "pk": "GD", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "GRD", 
             "name": "GRENADA", 
@@ -1045,7 +1045,7 @@
     }, 
     {
         "pk": "GP", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "GLP", 
             "name": "GUADELOUPE", 
@@ -1057,7 +1057,7 @@
     }, 
     {
         "pk": "GU", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "GUM", 
             "name": "GUAM", 
@@ -1069,7 +1069,7 @@
     }, 
     {
         "pk": "GT", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "GTM", 
             "name": "GUATEMALA", 
@@ -1081,7 +1081,7 @@
     }, 
     {
         "pk": "GG", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "GGY", 
             "name": "GUERNSEY", 
@@ -1093,7 +1093,7 @@
     }, 
     {
         "pk": "GN", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "GIN", 
             "name": "GUINEA", 
@@ -1105,7 +1105,7 @@
     }, 
     {
         "pk": "GW", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "GNB", 
             "name": "GUINEA-BISSAU", 
@@ -1117,7 +1117,7 @@
     }, 
     {
         "pk": "GY", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "GUY", 
             "name": "GUYANA", 
@@ -1129,7 +1129,7 @@
     }, 
     {
         "pk": "HT", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "HTI", 
             "name": "HAITI", 
@@ -1141,7 +1141,7 @@
     }, 
     {
         "pk": "HM", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "HMD", 
             "name": "HEARD ISLAND AND MCDONALD ISLANDS", 
@@ -1153,7 +1153,7 @@
     }, 
     {
         "pk": "VA", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "VAT", 
             "name": "HOLY SEE (VATICAN CITY STATE)", 
@@ -1165,7 +1165,7 @@
     }, 
     {
         "pk": "HN", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "HND", 
             "name": "HONDURAS", 
@@ -1177,7 +1177,7 @@
     }, 
     {
         "pk": "HK", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "HKG", 
             "name": "HONG KONG", 
@@ -1189,7 +1189,7 @@
     }, 
     {
         "pk": "HU", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "HUN", 
             "name": "HUNGARY", 
@@ -1201,7 +1201,7 @@
     }, 
     {
         "pk": "IS", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "ISL", 
             "name": "ICELAND", 
@@ -1213,7 +1213,7 @@
     }, 
     {
         "pk": "IN", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "IND", 
             "name": "INDIA", 
@@ -1225,7 +1225,7 @@
     }, 
     {
         "pk": "ID", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "IDN", 
             "name": "INDONESIA", 
@@ -1237,7 +1237,7 @@
     }, 
     {
         "pk": "IR", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "IRN", 
             "name": "IRAN, ISLAMIC REPUBLIC OF", 
@@ -1249,7 +1249,7 @@
     }, 
     {
         "pk": "IQ", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "IRQ", 
             "name": "IRAQ", 
@@ -1261,7 +1261,7 @@
     }, 
     {
         "pk": "IE", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "IRL", 
             "name": "IRELAND", 
@@ -1273,7 +1273,7 @@
     }, 
     {
         "pk": "IM", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "IMN", 
             "name": "ISLE OF MAN", 
@@ -1285,7 +1285,7 @@
     }, 
     {
         "pk": "IL", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "ISR", 
             "name": "ISRAEL", 
@@ -1297,7 +1297,7 @@
     }, 
     {
         "pk": "IT", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "ITA", 
             "name": "ITALY", 
@@ -1309,7 +1309,7 @@
     }, 
     {
         "pk": "JM", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "JAM", 
             "name": "JAMAICA", 
@@ -1321,7 +1321,7 @@
     }, 
     {
         "pk": "JP", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "JPN", 
             "name": "JAPAN", 
@@ -1333,7 +1333,7 @@
     }, 
     {
         "pk": "JE", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "JEY", 
             "name": "JERSEY", 
@@ -1345,7 +1345,7 @@
     }, 
     {
         "pk": "JO", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "JOR", 
             "name": "JORDAN", 
@@ -1357,7 +1357,7 @@
     }, 
     {
         "pk": "KZ", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "KAZ", 
             "name": "KAZAKHSTAN", 
@@ -1369,7 +1369,7 @@
     }, 
     {
         "pk": "KE", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "KEN", 
             "name": "KENYA", 
@@ -1381,7 +1381,7 @@
     }, 
     {
         "pk": "KI", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "KIR", 
             "name": "KIRIBATI", 
@@ -1393,7 +1393,7 @@
     }, 
     {
         "pk": "KP", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "PRK", 
             "name": "KOREA, DEMOCRATIC PEOPLE'S REPUBLIC OF", 
@@ -1405,7 +1405,7 @@
     }, 
     {
         "pk": "KR", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "KOR", 
             "name": "KOREA, REPUBLIC OF", 
@@ -1417,7 +1417,7 @@
     }, 
     {
         "pk": "KW", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "KWT", 
             "name": "KUWAIT", 
@@ -1429,7 +1429,7 @@
     }, 
     {
         "pk": "KG", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "KGZ", 
             "name": "KYRGYZSTAN", 
@@ -1441,7 +1441,7 @@
     }, 
     {
         "pk": "LA", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "LAO", 
             "name": "LAO PEOPLE'S DEMOCRATIC REPUBLIC", 
@@ -1453,7 +1453,7 @@
     }, 
     {
         "pk": "LV", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "LVA", 
             "name": "LATVIA", 
@@ -1465,7 +1465,7 @@
     }, 
     {
         "pk": "LB", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "LBN", 
             "name": "LEBANON", 
@@ -1477,7 +1477,7 @@
     }, 
     {
         "pk": "LS", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "LSO", 
             "name": "LESOTHO", 
@@ -1489,7 +1489,7 @@
     }, 
     {
         "pk": "LR", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "LBR", 
             "name": "LIBERIA", 
@@ -1501,7 +1501,7 @@
     }, 
     {
         "pk": "LY", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "LBY", 
             "name": "LIBYAN ARAB JAMAHIRIYA", 
@@ -1513,7 +1513,7 @@
     }, 
     {
         "pk": "LI", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "LIE", 
             "name": "LIECHTENSTEIN", 
@@ -1525,7 +1525,7 @@
     }, 
     {
         "pk": "LT", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "LTU", 
             "name": "LITHUANIA", 
@@ -1537,7 +1537,7 @@
     }, 
     {
         "pk": "LU", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "LUX", 
             "name": "LUXEMBOURG", 
@@ -1549,7 +1549,7 @@
     }, 
     {
         "pk": "MO", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "MAC", 
             "name": "MACAO", 
@@ -1561,7 +1561,7 @@
     }, 
     {
         "pk": "MK", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "MKD", 
             "name": "MACEDONIA, THE FORMER YUGOSLAV REPUBLIC OF", 
@@ -1573,7 +1573,7 @@
     }, 
     {
         "pk": "MG", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "MDG", 
             "name": "MADAGASCAR", 
@@ -1585,7 +1585,7 @@
     }, 
     {
         "pk": "MW", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "MWI", 
             "name": "MALAWI", 
@@ -1597,7 +1597,7 @@
     }, 
     {
         "pk": "MY", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "MYS", 
             "name": "MALAYSIA", 
@@ -1609,7 +1609,7 @@
     }, 
     {
         "pk": "MV", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "MDV", 
             "name": "MALDIVES", 
@@ -1621,7 +1621,7 @@
     }, 
     {
         "pk": "ML", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "MLI", 
             "name": "MALI", 
@@ -1633,7 +1633,7 @@
     }, 
     {
         "pk": "MT", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "MLT", 
             "name": "MALTA", 
@@ -1645,7 +1645,7 @@
     }, 
     {
         "pk": "MH", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "MHL", 
             "name": "MARSHALL ISLANDS", 
@@ -1657,7 +1657,7 @@
     }, 
     {
         "pk": "MQ", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "MTQ", 
             "name": "MARTINIQUE", 
@@ -1669,7 +1669,7 @@
     }, 
     {
         "pk": "MR", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "MRT", 
             "name": "MAURITANIA", 
@@ -1681,7 +1681,7 @@
     }, 
     {
         "pk": "MU", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "MUS", 
             "name": "MAURITIUS", 
@@ -1693,7 +1693,7 @@
     }, 
     {
         "pk": "YT", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "MYT", 
             "name": "MAYOTTE", 
@@ -1705,7 +1705,7 @@
     }, 
     {
         "pk": "MX", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "MEX", 
             "name": "MEXICO", 
@@ -1717,7 +1717,7 @@
     }, 
     {
         "pk": "FM", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "FSM", 
             "name": "MICRONESIA, FEDERATED STATES OF", 
@@ -1729,7 +1729,7 @@
     }, 
     {
         "pk": "MD", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "MDA", 
             "name": "MOLDOVA, REPUBLIC OF", 
@@ -1741,7 +1741,7 @@
     }, 
     {
         "pk": "MC", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "MCO", 
             "name": "MONACO", 
@@ -1753,7 +1753,7 @@
     }, 
     {
         "pk": "MN", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "MNG", 
             "name": "MONGOLIA", 
@@ -1765,7 +1765,7 @@
     }, 
     {
         "pk": "ME", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "MNE", 
             "name": "MONTENEGRO", 
@@ -1777,7 +1777,7 @@
     }, 
     {
         "pk": "MS", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "MSR", 
             "name": "MONTSERRAT", 
@@ -1789,7 +1789,7 @@
     }, 
     {
         "pk": "MA", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "MAR", 
             "name": "MOROCCO", 
@@ -1801,7 +1801,7 @@
     }, 
     {
         "pk": "MZ", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "MOZ", 
             "name": "MOZAMBIQUE", 
@@ -1813,7 +1813,7 @@
     }, 
     {
         "pk": "MM", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "MMR", 
             "name": "MYANMAR", 
@@ -1825,7 +1825,7 @@
     }, 
     {
         "pk": "NA", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "NAM", 
             "name": "NAMIBIA", 
@@ -1837,7 +1837,7 @@
     }, 
     {
         "pk": "NR", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "NRU", 
             "name": "NAURU", 
@@ -1849,7 +1849,7 @@
     }, 
     {
         "pk": "NP", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "NPL", 
             "name": "NEPAL", 
@@ -1861,7 +1861,7 @@
     }, 
     {
         "pk": "NL", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "NLD", 
             "name": "NETHERLANDS", 
@@ -1873,7 +1873,7 @@
     }, 
     {
         "pk": "AN", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "ANT", 
             "name": "NETHERLANDS ANTILLES", 
@@ -1885,7 +1885,7 @@
     }, 
     {
         "pk": "NC", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "NCL", 
             "name": "NEW CALEDONIA", 
@@ -1897,7 +1897,7 @@
     }, 
     {
         "pk": "NZ", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "NZL", 
             "name": "NEW ZEALAND", 
@@ -1909,7 +1909,7 @@
     }, 
     {
         "pk": "NI", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "NIC", 
             "name": "NICARAGUA", 
@@ -1921,7 +1921,7 @@
     }, 
     {
         "pk": "NE", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "NER", 
             "name": "NIGER", 
@@ -1933,7 +1933,7 @@
     }, 
     {
         "pk": "NG", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "NGA", 
             "name": "NIGERIA", 
@@ -1945,7 +1945,7 @@
     }, 
     {
         "pk": "NU", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "NIU", 
             "name": "NIUE", 
@@ -1957,7 +1957,7 @@
     }, 
     {
         "pk": "NF", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "NFK", 
             "name": "NORFOLK ISLAND", 
@@ -1969,7 +1969,7 @@
     }, 
     {
         "pk": "MP", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "MNP", 
             "name": "NORTHERN MARIANA ISLANDS", 
@@ -1981,7 +1981,7 @@
     }, 
     {
         "pk": "NO", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "NOR", 
             "name": "NORWAY", 
@@ -1993,7 +1993,7 @@
     }, 
     {
         "pk": "OM", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "OMN", 
             "name": "OMAN", 
@@ -2005,7 +2005,7 @@
     }, 
     {
         "pk": "PK", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "PAK", 
             "name": "PAKISTAN", 
@@ -2017,7 +2017,7 @@
     }, 
     {
         "pk": "PW", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "PLW", 
             "name": "PALAU", 
@@ -2029,7 +2029,7 @@
     }, 
     {
         "pk": "PS", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "PSE", 
             "name": "PALESTINIAN TERRITORY, OCCUPIED", 
@@ -2041,7 +2041,7 @@
     }, 
     {
         "pk": "PA", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "PAN", 
             "name": "PANAMA", 
@@ -2053,7 +2053,7 @@
     }, 
     {
         "pk": "PG", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "PNG", 
             "name": "PAPUA NEW GUINEA", 
@@ -2065,7 +2065,7 @@
     }, 
     {
         "pk": "PY", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "PRY", 
             "name": "PARAGUAY", 
@@ -2077,7 +2077,7 @@
     }, 
     {
         "pk": "PE", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "PER", 
             "name": "PERU", 
@@ -2089,7 +2089,7 @@
     }, 
     {
         "pk": "PH", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "PHL", 
             "name": "PHILIPPINES", 
@@ -2101,7 +2101,7 @@
     }, 
     {
         "pk": "PN", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "PCN", 
             "name": "PITCAIRN", 
@@ -2113,7 +2113,7 @@
     }, 
     {
         "pk": "PL", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "POL", 
             "name": "POLAND", 
@@ -2125,7 +2125,7 @@
     }, 
     {
         "pk": "PT", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "PRT", 
             "name": "PORTUGAL", 
@@ -2137,7 +2137,7 @@
     }, 
     {
         "pk": "PR", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "PRI", 
             "name": "PUERTO RICO", 
@@ -2149,7 +2149,7 @@
     }, 
     {
         "pk": "QA", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "QAT", 
             "name": "QATAR", 
@@ -2161,7 +2161,7 @@
     }, 
     {
         "pk": "RE", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "REU", 
             "name": "REUNION", 
@@ -2173,7 +2173,7 @@
     }, 
     {
         "pk": "RO", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "ROU", 
             "name": "ROMANIA", 
@@ -2185,7 +2185,7 @@
     }, 
     {
         "pk": "RU", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "RUS", 
             "name": "RUSSIAN FEDERATION", 
@@ -2197,7 +2197,7 @@
     }, 
     {
         "pk": "RW", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "RWA", 
             "name": "RWANDA", 
@@ -2209,7 +2209,7 @@
     }, 
     {
         "pk": "SH", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "SHN", 
             "name": "SAINT HELENA", 
@@ -2221,7 +2221,7 @@
     }, 
     {
         "pk": "KN", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "KNA", 
             "name": "SAINT KITTS AND NEVIS", 
@@ -2233,7 +2233,7 @@
     }, 
     {
         "pk": "LC", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "LCA", 
             "name": "SAINT LUCIA", 
@@ -2245,7 +2245,7 @@
     }, 
     {
         "pk": "PM", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "SPM", 
             "name": "SAINT PIERRE AND MIQUELON", 
@@ -2257,7 +2257,7 @@
     }, 
     {
         "pk": "VC", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "VCT", 
             "name": "SAINT VINCENT AND THE GRENADINES", 
@@ -2269,7 +2269,7 @@
     }, 
     {
         "pk": "WS", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "WSM", 
             "name": "SAMOA", 
@@ -2281,7 +2281,7 @@
     }, 
     {
         "pk": "SM", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "SMR", 
             "name": "SAN MARINO", 
@@ -2293,7 +2293,7 @@
     }, 
     {
         "pk": "ST", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "STP", 
             "name": "SAO TOME AND PRINCIPE", 
@@ -2305,7 +2305,7 @@
     }, 
     {
         "pk": "SA", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "SAU", 
             "name": "SAUDI ARABIA", 
@@ -2317,7 +2317,7 @@
     }, 
     {
         "pk": "SN", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "SEN", 
             "name": "SENEGAL", 
@@ -2329,7 +2329,7 @@
     }, 
     {
         "pk": "RS", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "SRB", 
             "name": "SERBIA", 
@@ -2341,7 +2341,7 @@
     }, 
     {
         "pk": "SC", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "SYC", 
             "name": "SEYCHELLES", 
@@ -2353,7 +2353,7 @@
     }, 
     {
         "pk": "SL", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "SLE", 
             "name": "SIERRA LEONE", 
@@ -2365,7 +2365,7 @@
     }, 
     {
         "pk": "SG", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "SGP", 
             "name": "SINGAPORE", 
@@ -2377,7 +2377,7 @@
     }, 
     {
         "pk": "SK", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "SVK", 
             "name": "SLOVAKIA", 
@@ -2389,7 +2389,7 @@
     }, 
     {
         "pk": "SI", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "SVN", 
             "name": "SLOVENIA", 
@@ -2401,7 +2401,7 @@
     }, 
     {
         "pk": "SB", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "SLB", 
             "name": "SOLOMON ISLANDS", 
@@ -2413,7 +2413,7 @@
     }, 
     {
         "pk": "SO", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "SOM", 
             "name": "SOMALIA", 
@@ -2425,7 +2425,7 @@
     }, 
     {
         "pk": "ZA", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "ZAF", 
             "name": "SOUTH AFRICA", 
@@ -2437,7 +2437,7 @@
     }, 
     {
         "pk": "GS", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "SGS", 
             "name": "SOUTH GEORGIA AND THE SOUTH SANDWICH ISLANDS", 
@@ -2449,7 +2449,7 @@
     }, 
     {
         "pk": "ES", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "ESP", 
             "name": "SPAIN", 
@@ -2461,7 +2461,7 @@
     }, 
     {
         "pk": "LK", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "LKA", 
             "name": "SRI LANKA", 
@@ -2473,7 +2473,7 @@
     }, 
     {
         "pk": "SD", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "SDN", 
             "name": "SUDAN", 
@@ -2485,7 +2485,7 @@
     }, 
     {
         "pk": "SR", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "SUR", 
             "name": "SURINAME", 
@@ -2497,7 +2497,7 @@
     }, 
     {
         "pk": "SJ", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "SJM", 
             "name": "SVALBARD AND JAN MAYEN", 
@@ -2509,7 +2509,7 @@
     }, 
     {
         "pk": "SZ", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "SWZ", 
             "name": "SWAZILAND", 
@@ -2521,7 +2521,7 @@
     }, 
     {
         "pk": "SE", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "SWE", 
             "name": "SWEDEN", 
@@ -2533,7 +2533,7 @@
     }, 
     {
         "pk": "CH", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "CHE", 
             "name": "SWITZERLAND", 
@@ -2545,7 +2545,7 @@
     }, 
     {
         "pk": "SY", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "SYR", 
             "name": "SYRIAN ARAB REPUBLIC", 
@@ -2557,7 +2557,7 @@
     }, 
     {
         "pk": "TW", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "TWN", 
             "name": "TAIWAN, PROVINCE OF CHINA", 
@@ -2569,7 +2569,7 @@
     }, 
     {
         "pk": "TJ", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "TJK", 
             "name": "TAJIKISTAN", 
@@ -2581,7 +2581,7 @@
     }, 
     {
         "pk": "TZ", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "TZA", 
             "name": "TANZANIA, UNITED REPUBLIC OF", 
@@ -2593,7 +2593,7 @@
     }, 
     {
         "pk": "TH", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "THA", 
             "name": "THAILAND", 
@@ -2605,7 +2605,7 @@
     }, 
     {
         "pk": "TL", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "TLS", 
             "name": "TIMOR-LESTE", 
@@ -2617,7 +2617,7 @@
     }, 
     {
         "pk": "TG", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "TGO", 
             "name": "TOGO", 
@@ -2629,7 +2629,7 @@
     }, 
     {
         "pk": "TK", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "TKL", 
             "name": "TOKELAU", 
@@ -2641,7 +2641,7 @@
     }, 
     {
         "pk": "TO", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "TON", 
             "name": "TONGA", 
@@ -2653,7 +2653,7 @@
     }, 
     {
         "pk": "TT", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "TTO", 
             "name": "TRINIDAD AND TOBAGO", 
@@ -2665,7 +2665,7 @@
     }, 
     {
         "pk": "TN", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "TUN", 
             "name": "TUNISIA", 
@@ -2677,7 +2677,7 @@
     }, 
     {
         "pk": "TR", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "TUR", 
             "name": "TURKEY", 
@@ -2689,7 +2689,7 @@
     }, 
     {
         "pk": "TM", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "TKM", 
             "name": "TURKMENISTAN", 
@@ -2701,7 +2701,7 @@
     }, 
     {
         "pk": "TC", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "TCA", 
             "name": "TURKS AND CAICOS ISLANDS", 
@@ -2713,7 +2713,7 @@
     }, 
     {
         "pk": "TV", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "TUV", 
             "name": "TUVALU", 
@@ -2725,7 +2725,7 @@
     }, 
     {
         "pk": "UG", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "UGA", 
             "name": "UGANDA", 
@@ -2737,7 +2737,7 @@
     }, 
     {
         "pk": "UA", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "UKR", 
             "name": "UKRAINE", 
@@ -2749,7 +2749,7 @@
     }, 
     {
         "pk": "AE", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "ARE", 
             "name": "UNITED ARAB EMIRATES", 
@@ -2761,7 +2761,7 @@
     }, 
     {
         "pk": "US", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "USA", 
             "name": "UNITED STATES", 
@@ -2773,7 +2773,7 @@
     }, 
     {
         "pk": "UM", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "UMI", 
             "name": "UNITED STATES MINOR OUTLYING ISLANDS", 
@@ -2785,7 +2785,7 @@
     }, 
     {
         "pk": "UY", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "URY", 
             "name": "URUGUAY", 
@@ -2797,7 +2797,7 @@
     }, 
     {
         "pk": "UZ", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "UZB", 
             "name": "UZBEKISTAN", 
@@ -2809,7 +2809,7 @@
     }, 
     {
         "pk": "VU", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "VUT", 
             "name": "VANUATU", 
@@ -2821,7 +2821,7 @@
     }, 
     {
         "pk": "VE", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "VEN", 
             "name": "VENEZUELA", 
@@ -2833,7 +2833,7 @@
     }, 
     {
         "pk": "VN", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "VNM", 
             "name": "VIET NAM", 
@@ -2845,7 +2845,7 @@
     }, 
     {
         "pk": "VG", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "VGB", 
             "name": "VIRGIN ISLANDS, BRITISH", 
@@ -2857,7 +2857,7 @@
     }, 
     {
         "pk": "VI", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "VIR", 
             "name": "VIRGIN ISLANDS, U.S.", 
@@ -2869,7 +2869,7 @@
     }, 
     {
         "pk": "WF", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "WLF", 
             "name": "WALLIS AND FUTUNA", 
@@ -2881,7 +2881,7 @@
     }, 
     {
         "pk": "EH", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "ESH", 
             "name": "WESTERN SAHARA", 
@@ -2893,7 +2893,7 @@
     }, 
     {
         "pk": "YE", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "YEM", 
             "name": "YEMEN", 
@@ -2905,7 +2905,7 @@
     }, 
     {
         "pk": "ZM", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "ZMB", 
             "name": "ZAMBIA", 
@@ -2917,7 +2917,7 @@
     }, 
     {
         "pk": "ZW", 
-        "model": "unk.registration.country", 
+        "model": "registration.country", 
         "fields": {
             "iso_3166_1_a3": "ZWE", 
             "name": "ZIMBABWE", 
