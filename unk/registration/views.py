@@ -26,6 +26,8 @@ def login(request):
 
 def register(request):
     username = request.POST['username']
+    password = request.POST['password']
+    
 
 
 def logout(request):

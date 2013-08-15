@@ -73,6 +73,7 @@ class Customer(models.Model):
 	"""Customer infos"""
 	user = models.OneToOneField(User)
 	phone = models.CharField(max_length=20)
+	main_contact = 
 	qq = models.CharField(max_length=20)
 	msn = models.EmailField(max_length=75)
 	ym = models.CharField(max_length=100)
