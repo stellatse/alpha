@@ -19,4 +19,5 @@ Then checkout the latest source code, and start the site
     git clone https://github.com/stellatse/alpha.git
     cd alpha
     python manage.py syncdb
+    python manage.py loaddata unk/countries.json
     python manage.py runserver
