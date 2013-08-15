@@ -2,10 +2,27 @@ from django.db import models
 from django.contrib.auth.models import User
 
 class Country(models.Model):
-	"""List of countires"""
-	name = models.CharField(max_length=30)
-	def __unicode__(self):
-		return self.name
+    """
+    International Organization for Standardization (ISO) 3166-1 Country list.
+    """
+    iso_3166_1_a2 = models.CharField(_('ISO 3166-1 alpha-2'), max_length=2,
+                                     primary_key=True)
+    iso_3166_1_a3 = models.CharField(_('ISO 3166-1 alpha-3'), max_length=3,
+                                     null=True, db_index=True)
+    iso_3166_1_numeric = models.PositiveSmallIntegerField(
+        _('ISO 3166-1 numeric'), null=True, db_index=True)
+    name = models.CharField(_('Official name (CAPS)'), max_length=128)
+    printable_name = models.CharField(_('Country name'), max_length=128)
+
+    display_order = models.PositiveSmallIntegerField(
+        _("Display order"), default=0, db_index=True,
+        help_text=_('Higher the number, higher the country in the list.'))
+
+    is_shipping_country = models.BooleanField(_("Is Shipping Country"),
+                                              default=False, db_index=True)
+
+    def __unicode__(self):
+        return self.printable_name or self.name
 
 class TimeZone(models.Model):
 	"""List of Time zones"""
