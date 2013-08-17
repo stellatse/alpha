@@ -5,6 +5,23 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{{ title }}</title>
 <link href="{{ STATIC_URL }}css/bootstrap.css" rel="stylesheet" media="screen" />
+<link href="{{ STATIC_URL }}css/jquery.selectBoxIt.css" rel="stylesheet" />
+<style type="text/css">
+.selectboxit-container .selectboxit-options {
+  width: 210px;
+  max-height: 220px;
+}
+</style>
+
+<script type="text/javascript" src="{{ STATIC_URL }}js/jquery.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}ui/jquery-ui.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap.js"></script>
+<script type="text/javascript" src="{{ STATIC_URL }}js/jquery.selectBoxIt.js"></script>
+<script type="text/javascript">
+$(function() {
+  $('select').selectBoxIt();
+})
+</script>
 </head>
 <body>
 <div class="container">
@@ -68,14 +85,24 @@
 						</div>
 					</div>
 					<div class="control-group">
-						<label class="control-label" for="Country">Country</label>
+						<label class="control-label" for="nation">Nation</label>
 						<div class="controls">
-							<select id="country">
+							<select id="nation">
 								<option>China</option>
 								<option>United State</option>
 								<option>German</option>
 								<option>Japan</option>
 								<option>Astralian</option>
+                <option>China</option>
+                <option>United State</option>
+                <option>German</option>
+                <option>Japan</option>
+                <option>Astralian</option>
+                <option>China</option>
+                <option>United State</option>
+                <option>German</option>
+                <option>Japan</option>
+                <option>Astralian</option>
 							</select>
 						</div>
 					</div>
@@ -88,6 +115,24 @@
 							</select>
 						</div>
 					</div>
+          <div class="control-group">
+            <label class="control-label" for="address">Address</label>
+            <div class="controls">
+              <input type="text" class="input-xlarge" id="address">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="phone">Phone Number</label>
+            <div class="controls">
+              <input type="text" class="input-xlarge" id="phone">
+            </div>
+          </div>
+          <div class="control-group">
+            <label class="control-label" for="im">Instant Messager</label>
+            <div class="controls">
+              <input type="text" class="input-xlarge" id="im">
+            </div>
+          </div>
 				</fieldset>
 			</div>
 			<div class="modal-footer">
@@ -96,6 +141,7 @@
 			</div>
 		</form>
 	</div>
+	
 	<div class="container">
 		{% block content %} {% endblock %}
 	</div>
@@ -104,7 +150,5 @@
       <p>&copy; Company 2013</p>
   </footer>
 </div>
-	<script type="text/javascript" src="{{ STATIC_URL }}js/jquery.js"></script>
-	<script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap.js"></script>
 </body>
 </html>

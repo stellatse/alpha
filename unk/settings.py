@@ -75,6 +75,8 @@ STATICFILES_DIRS = (
     os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..', 'static/bootstrap')),
     os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..', 'static/jquery')),
     os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..', 'static/slide')),
+    os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..', 'static/jquery-ui')),
+    os.path.abspath(os.path.join(os.path.dirname( __file__ ), '..', 'static/selectboxit')),
 )
 
 # List of finder classes that know how to find static files in
