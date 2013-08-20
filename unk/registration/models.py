@@ -87,7 +87,11 @@ class Customer(models.Model):
 		return '%s %s' % (self.first_name, self.last_name)
 	full_name = property(_get_full_name)
 
-class Admin(models.Model):
+	class Admin:
+		list_display = ('user', 'full_name', 'phone', 'qq', 'msn', 'ym', 'sonork', 'nation', 'address', 'timezone', 'c_type', 'link_supplier', 'locked' )
+			
+
+class Administrator(models.Model):
 	"""Admin infos"""
 	user = models.OneToOneField(User)
 	ADMIN_TYPE = (

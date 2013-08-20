@@ -34,6 +34,8 @@ def register(request):
         username = request.POST['username']
         password = request.POST['password']
         password2 = request.POST['password2']
+        first_name = request.POST['firstname']
+        last_name = request.POST['lastname']
         if password != password2:
             ret.append({'status': 'Fail', 'msg': 'password not consistent'})
             return ret
@@ -43,7 +45,7 @@ def register(request):
         timezone = pytz.timezone(request.POST['timezone'])
         request.session['django_timezone'] = timezone
         address = request.POST['address']
-        Customer.add()
+        user = User.objects.create_user(username, email, password)
 
     return render(request, 'unk/index.html', ret)
 
