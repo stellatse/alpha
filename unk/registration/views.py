@@ -42,6 +42,7 @@ def register(request):
         email = request.POST['email']
         phone = request.POST['phone']
         nation = request.POST['nation']
+        country = Country.objects.filter(iso_3166_1_numeric=int(nation))
         timezone = pytz.timezone(request.POST['timezone'])
         request.session['django_timezone'] = timezone
         address = request.POST['address']
@@ -49,7 +50,10 @@ def register(request):
         user.last_name = last_name
         user.first_name = first_name
         user.save()
-        customer = Customer(user=user, phone=phone, nation=nation, address=address, timezone=timezone)
+        tz = TimeZone(name=timezone)
+        tz.save()
+        customer_type = CustomerType.objects.get(pk=1)
+        customer = Customer(user=user, phone=phone, nation=country, address=address, timezone=tz, c_type=customer_type)
 
     return render(request, 'unk/index.html', ret)
 
