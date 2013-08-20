@@ -69,7 +69,7 @@ $(function() {
     <h3>User Registration</h3>
   </div>
 
-		<form class="form-horizontal">
+		<form class="form-horizontal" action="/registration/reg" >
 			<div class="modal-body">
 				<fieldset>
 					<div class="control-group">
@@ -84,25 +84,19 @@ $(function() {
 							<input type="password" class="input-xlarge" id="password">
 						</div>
 					</div>
+                    <div class="control-group">
+                         <label class="control-label" for="password">Password confirm</label>
+                         <div class="controls">
+                            <input type="password" class="input-xlarge" id="password2">
+                        </div>
+                    </div>
 					<div class="control-group">
 						<label class="control-label" for="nation">Nation</label>
 						<div class="controls">
 							<select id="nation">
-								<option>China</option>
-								<option>United State</option>
-								<option>German</option>
-								<option>Japan</option>
-								<option>Astralian</option>
-                <option>China</option>
-                <option>United State</option>
-                <option>German</option>
-                <option>Japan</option>
-                <option>Astralian</option>
-                <option>China</option>
-                <option>United State</option>
-                <option>German</option>
-                <option>Japan</option>
-                <option>Astralian</option>
+                            {% for country in countries %}
+								<option id="{{ country.iso_3166_1_numeric }}">{{country}}</option>
+                            {% endfor %}
 							</select>
 						</div>
 					</div>
