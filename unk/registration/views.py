@@ -1,7 +1,10 @@
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
 import json
+from django.core.context_processors import csrf
+from unk.registration.models import Customer
+import pytz
 
 def home(request):
     return render(request, 'account/index.html')
@@ -22,12 +25,27 @@ def login(request):
         # the authentication system was unable to verify the username and password
         print("The username and password were incorrect.")
     context = {}
-    return render(request, 'index.html', context)
+    return render(request, 'unk/index.html', context)
 
 def register(request):
-    username = request.POST['username']
-    password = request.POST['password']
-    
+    ret = {}
+    ret.update(csrf(request))
+    if request.method == 'POST':
+        username = request.POST['username']
+        password = request.POST['password']
+        password2 = request.POST['password2']
+        if password != password2:
+            ret.append({'status': 'Fail', 'msg': 'password not consistent'})
+            return ret
+        email = request.POST['email']
+        phone = request.POST['phone']
+        nation = request.POST['nation']
+        timezone = pytz.timezone(request.POST['timezone'])
+        request.session['django_timezone'] = timezone
+        address = request.POST['address']
+        Customer.add()
+
+    return render(request, 'unk/index.html', ret)
 
 
 def logout(request):

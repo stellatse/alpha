@@ -69,68 +69,70 @@ $(function() {
     <h3>User Registration</h3>
   </div>
 
-		<form class="form-horizontal" action="/registration/reg" >
-			<div class="modal-body">
+		<form class="form-horizontal" id="reg" method="POST" action="/registration/reg/" >{% csrf_token %}
+            <div class="modal-body">
 				<fieldset>
 					<div class="control-group">
 						<label class="control-label" for="username">Username</label>
 						<div class="controls">
-							<input type="text" class="input-xlarge" id="username">
+							<input type="text" class="input-xlarge" id="username" name="username">
 						</div>
 					</div>
 					<div class="control-group">
 						<label class="control-label" for="password">Password</label>
 						<div class="controls">
-							<input type="password" class="input-xlarge" id="password">
+							<input type="password" class="input-xlarge" id="password" name="password">
 						</div>
 					</div>
                     <div class="control-group">
                          <label class="control-label" for="password">Password confirm</label>
                          <div class="controls">
-                            <input type="password" class="input-xlarge" id="password2">
+                            <input type="password" class="input-xlarge" id="password2" name="password2">
                         </div>
                     </div>
 					<div class="control-group">
 						<label class="control-label" for="nation">Nation</label>
 						<div class="controls">
-							<select id="nation">
+							<select id="nation" name="nation">
                             {% for country in countries %}
-								<option id="{{ country.iso_3166_1_numeric }}">{{country}}</option>
+								<option value="{{ country.iso_3166_1_numeric }}">{{country}}</option>
                             {% endfor %}
 							</select>
 						</div>
 					</div>
+					{% load tz %}
 					<div class="control-group">
 						<label class="control-label" for="timezone">Timezone</label>
 						<div class="controls">
-							<select id="timezone">
-								<option>GMT</option>
-								<option>Asia/Shanghai</option>
+							<select id="timezone" name="timezone">
+								{% for tz in timezones %}
+								<option value="{{ tz }}"{% if tz == TIME_ZONE %} selected="selected"{% endif %}>{{ tz }}</option>
+        						{% endfor %}
 							</select>
 						</div>
 					</div>
           <div class="control-group">
+            <label class="control-label" for="email">E-mail</label>
+            <div class="controls">
+              <input type="text" class="input-xlarge" id="email" name="email">
+            </div>
+          </div>
+          <div class="control-group">
             <label class="control-label" for="address">Address</label>
             <div class="controls">
-              <input type="text" class="input-xlarge" id="address">
+              <input type="text" class="input-xlarge" id="address" name="address">
             </div>
           </div>
           <div class="control-group">
             <label class="control-label" for="phone">Phone Number</label>
             <div class="controls">
-              <input type="text" class="input-xlarge" id="phone">
-            </div>
-          </div>
-          <div class="control-group">
-            <label class="control-label" for="im">Instant Messager</label>
-            <div class="controls">
-              <input type="text" class="input-xlarge" id="im">
+              <input type="text" class="input-xlarge" id="phone" name="phone">
             </div>
           </div>
 				</fieldset>
 			</div>
 			<div class="modal-footer">
-				<a href="#" class="btn btn-success">Register</a> <a href="#"
+				<a href="javascript:;" onclick="document.getElementById('reg').submit();" class="btn btn-success">Register</a> <a href="#"
 					class="btn" data-dismiss="modal">Close</a>
 			</div>
 		</form>
