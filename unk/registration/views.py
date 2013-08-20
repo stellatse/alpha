@@ -42,7 +42,7 @@ def register(request):
         email = request.POST['email']
         phone = request.POST['phone']
         nation = request.POST['nation']
-        country = Country.objects.filter(iso_3166_1_numeric=int(nation))
+        country = Country.objects.filter(iso_3166_1_numeric=int(nation))[0]
         timezone = pytz.timezone(request.POST['timezone'])
         request.session['django_timezone'] = timezone
         address = request.POST['address']
