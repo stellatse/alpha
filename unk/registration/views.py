@@ -3,7 +3,7 @@ from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
 import json
 from django.core.context_processors import csrf
-from unk.registration.models import Customer
+from unk.registration.models import Customer, Country, TimeZone, CustomerType
 import pytz
 
 def home(request):
