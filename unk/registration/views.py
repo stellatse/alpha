@@ -49,7 +49,7 @@ def register(request):
         user.last_name = last_name
         user.first_name = first_name
         user.save()
-        #customer = Customer(user, )
+        customer = Customer(user=user, phone=phone, nation=nation, address=address, timezone=timezone)
 
     return render(request, 'unk/index.html', ret)
 
