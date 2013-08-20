@@ -46,6 +46,10 @@ def register(request):
         request.session['django_timezone'] = timezone
         address = request.POST['address']
         user = User.objects.create_user(username, email, password)
+        user.last_name = last_name
+        user.first_name = first_name
+        user.save()
+        #customer = Customer(user, )
 
     return render(request, 'unk/index.html', ret)
 
