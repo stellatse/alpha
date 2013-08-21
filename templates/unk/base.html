@@ -17,135 +17,33 @@
 <script type="text/javascript" src="{{ STATIC_URL }}ui/jquery-ui.js"></script>
 <script type="text/javascript" src="{{ STATIC_URL }}js/bootstrap.js"></script>
 <script type="text/javascript" src="{{ STATIC_URL }}js/jquery.selectBoxIt.js"></script>
-<script type="text/javascript">
+<!-- <script type="text/javascript">
 $(function() {
   $('select').selectBoxIt();
 })
-</script>
+</script> -->
 </head>
 <body>
 <div class="container">
-	<div class="navbar navbar-inverse">
-		<div class="navbar-inner">
-			<div class="container">
-				<a class="brand" href="#">UNK</a>
-				<div class="nav-collapse collapse">
-					<ul class="nav">
-						<li class="active"><a href="/">Home</a></li>
-						<li><a href="#about">About</a></li>
-						<li><a href="#contact">Contact</a></li>
-						<li class="dropdown"><a href="#" class="dropdown-toggle"
-							  data-toggle="dropdown">Dropdown <b class="caret"></b></a>
-							<ul class="dropdown-menu">
-								<li><a href="#">Action</a></li>
-								<li><a href="#">Another action</a></li>
-								<li><a href="#">Something else here</a></li>
-								<li class="divider"></li>
-								<li class="nav-header">Nav header</li>
-								<li><a href="#">Separated link</a></li>
-								<li><a href="#">One more separated link</a></li>
-							</ul>
-						</li>
-					</ul>
-					
-					<div class="pull-right">
-	          <form class="navbar-form ">
-	            <input class="span2" type="text" placeholder="Email"> <input
-	              class="span2" type="password" placeholder="Password">
-	            <button type="submit" class="btn">Sign in</button>
-              <a href="#login-form" class="btn btn-success" 
-              data-toggle="modal">Sign up</a>
-	          </form>
-          </div>
-				</div>
-			</div>
-		</div>
-	</div>
-	<div class="modal hide fade" id="login-form">
+	{% include "unk/navigator.html" %}
 	
+	<div class="modal hide fade" id="login-form">
   <div class="modal-header">
     <button type="button" class="close" 
     data-dismiss="modal" >&times;</button>
     <h3>User Registration</h3>
   </div>
 
-		<form class="form-horizontal" id="reg" method="POST" action="/registration/reg/" >{% csrf_token %}
-            <div class="modal-body">
-				<fieldset>
-					<div class="control-group">
-						<label class="control-label" for="username">Username</label>
-						<div class="controls">
-							<input type="text" class="input-xlarge" id="username" name="username">
-						</div>
-					</div>
-					<div class="control-group">
-						<label class="control-label" for="password">Password</label>
-						<div class="controls">
-							<input type="password" class="input-xlarge" id="password" name="password">
-						</div>
-					</div>
-                    <div class="control-group">
-                         <label class="control-label" for="password">Password confirm</label>
-                         <div class="controls">
-                            <input type="password" class="input-xlarge" id="password2" name="password2">
-                        </div>
-                    </div>
-					<div class="control-group">
-						<label class="control-label" for="nation">Nation</label>
-						<div class="controls">
-							<select id="nation" name="nation">
-                            {% for country in countries %}
-								<option value="{{ country.iso_3166_1_numeric }}">{{country}}</option>
-                            {% endfor %}
-							</select>
-						</div>
-					</div>
-					{% load tz %}
-					<div class="control-group">
-						<label class="control-label" for="timezone">Timezone</label>
-						<div class="controls">
-							<select id="timezone" name="timezone">
-								{% for tz in timezones %}
-								<option value="{{ tz }}"{% if tz == TIME_ZONE %} selected="selected"{% endif %}>{{ tz }}</option>
-        						{% endfor %}
-							</select>
-						</div>
-					</div>
-          <div class="control-group">
-            <label class="control-label" for="firstname">First Name</label>
-            <div class="controls">
-              <input type="text" class="input-xlarge" id="firstname" name="firstname">
-            </div>
-          </div>
-          <div class="control-group">
-            <label class="control-label" for="lastname">Last Name</label>
-            <div class="controls">
-              <input type="text" class="input-xlarge" id="lastname" name="lastname">
-            </div>
-          </div>
-          <div class="control-group">
-            <label class="control-label" for="email">E-mail</label>
-            <div class="controls">
-              <input type="text" class="input-xlarge" id="email" name="email">
-            </div>
-          </div>
-          <div class="control-group">
-            <label class="control-label" for="address">Address</label>
-            <div class="controls">
-              <input type="text" class="input-xlarge" id="address" name="address">
-            </div>
-          </div>
-          <div class="control-group">
-            <label class="control-label" for="phone">Phone Number</label>
-            <div class="controls">
-              <input type="text" class="input-xlarge" id="phone" name="phone">
-            </div>
-          </div>
-				</fieldset>
+		<form class="form-horizontal uniForm" id="reg" method="POST" 
+		  action="/registration/reg/" >
+		  {% csrf_token %}
+      <div class="modal-body">
+        {% load crispy_forms_tags %}
+				{{ form | crispy }}
 			</div>
 			<div class="modal-footer">
-				<a href="javascript:;" onclick="document.getElementById('reg').submit();" class="btn btn-success">Register</a> <a href="#"
-					class="btn" data-dismiss="modal">Close</a>
+			<input type="submit" value="Submit" class="btn btn-success" />
+		  <a href="#" class="btn" data-dismiss="modal">Close</a>
 			</div>
 		</form>
 	</div>

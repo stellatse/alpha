@@ -121,6 +121,7 @@ TEMPLATE_DIRS = (
 
 INSTALLED_APPS = (
     'django_admin_bootstrapped',
+    'crispy_forms',
     'django.contrib.auth',
     'django.contrib.contenttypes',
     'django.contrib.sessions',

@@ -1,9 +1,11 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
 from django.contrib.auth import authenticate
-import json
 from django.core.context_processors import csrf
 from unk.registration.models import Customer, Country, TimeZone, CustomerType
+from unk.registration.forms import RegistrationForm
+
+import json
 import pytz
 
 def home(request):

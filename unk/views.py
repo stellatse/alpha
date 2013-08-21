@@ -1,7 +1,14 @@
 from unk.registration.models import Country
+from unk.registration.forms import RegistrationForm
 from django.shortcuts import render
-import pytz
+#import pytz
+
 def home(request):
     countries = Country.objects.all()
-    context = {'countries':countries, 'timezones': pytz.common_timezones}
-    return render(request, 'unk/index.html', context)
+    form = RegistrationForm({
+        'timezone': 'UTC'
+    })
+    return render(request, 'unk/index.html', {
+        'countries':countries, 
+        'form': form
+    })
