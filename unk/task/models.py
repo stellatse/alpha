@@ -8,7 +8,7 @@ class ReviewResult(models.Model):
 	"""Review result of the task"""
 	name = models.CharField(max_length=200)
 	def __unicode__(self):
-        return self.name
+		return self.name
 
 class TaskType(models.Model):
 	"""Task type, eg. file service/IMEI service/Server service"""
