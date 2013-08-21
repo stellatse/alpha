@@ -39,6 +39,8 @@ class Currency(models.Model):
 	name = models.CharField(max_length=20)
 	code = models.CharField(max_length=3) 
 	symbol = models.CharField(max_length=5)
+	def __unicode__(self):
+		return self.code
 
 
 class Service(models.Model):
@@ -52,6 +54,8 @@ class Service(models.Model):
 	commit_time_from = models.IntegerField()
 	commit_time_to = models.IntegerField()
 	parameter = models.ForeignKey(Parameter)
+	def __unicode__(self):
+		return self.name
 
 class Task(models.Model):
 	"""Task all"""
