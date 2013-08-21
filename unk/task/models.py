@@ -39,11 +39,6 @@ class Currency(models.Model):
 	name = models.CharField(max_length=20)
 	code = models.CharField(max_length=3) 
 	symbol = models.CharField(max_length=5)
-	def __init__(self, name, code, symbol):
-		super(Currency, self).__init__()
-		self.name = name
-		self.code = code
-		self.symbol = symbol
 
 
 class Service(models.Model):
