@@ -11,7 +11,7 @@ install required tools and libraries
 
     pip install django
     pip install django-admin-bootstrapped
-    pip install pytz
+    easy_install pytz
 
 Then checkout the latest source code, and start the site
 
