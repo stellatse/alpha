@@ -35,7 +35,7 @@ $(function() {
   </div>
 
 		<form class="form-horizontal uniForm" id="reg" method="POST" 
-		  action="/registration/reg/" >
+		  action="{% url 'register' %}" >
 		  {% csrf_token %}
       <div class="modal-body">
         {% load crispy_forms_tags %}
