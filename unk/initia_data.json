@@ -12,5 +12,96 @@
     "fields": {
       "name": "vip"
     }
-  }
+  },
+  {
+    "model": "task.ServiceCategory",
+    "pk": 1,
+    "fields": {
+      "name" : "Nokia PRL"
+    }
+  },
+  {
+    "model": "task.ServiceCategory",
+    "pk": 2,
+    "fields": {
+      "name" : "SL3 LBF"
+    }
+  },
+  {
+    "model": "task.TaskType",
+    "pk": 1,
+    "fields": {
+      "name" : "File Service"
+    }
+  },
+  {
+    "model": "task.TaskType",
+    "pk": 2,
+    "fields": {
+      "name" : "IMEI Service"
+    }
+  },
+  {
+    "model": "task.TaskType",
+    "pk": 3,
+    "fields": {
+      "name" : "Server Service"
+    }
+  },
+  {
+    "model": "task.TaskStatus",
+    "pk": 1,
+    "fields": {
+      "name" : "Initial"
+    }
+  },
+  {
+    "model": "task.TaskStatus",
+    "pk": 2,
+    "fields": {
+      "name" : "Open"
+    }
+  },
+  {
+    "model": "task.TaskStatus",
+    "pk": 3,
+    "fields": {
+      "name" : "Complete"
+    }
+  },
+  {
+    "model": "task.TaskStatus",
+    "pk": 4,
+    "fields": {
+      "name" : "Cancelled"
+    }
+  },
+  {
+    "model": "task.ReviewResult",
+    "pk": 1,
+    "fields": {
+      "name" : "Pass"
+    }
+  },
+  {
+    "model": "task.ReviewResult",
+    "pk": 2,
+    "fields": {
+      "name" : "Fail"
+    }
+  },
+  {
+    "model": "task.Parameter",
+    "pk": 1,
+    "fields": {
+      "name" : "hours"
+    }
+  },
+  {
+    "model": "task.Parameter",
+    "pk": 2,
+    "fields": {
+      "name" : "days"
+    }
+  },
 ]

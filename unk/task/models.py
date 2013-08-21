@@ -7,22 +7,32 @@ FILEDIR=os.path.join(os.path.dirname(__file__), 'files').replace('\\','/')
 class ReviewResult(models.Model):
 	"""Review result of the task"""
 	name = models.CharField(max_length=200)
+	def __unicode__(self):
+        return self.name
 
 class TaskType(models.Model):
 	"""Task type, eg. file service/IMEI service/Server service"""
 	name = models.CharField(max_length=200)
+	def __unicode__(self):
+        return self.name
 
 class Parameter(models.Model):
 	"""Delievery time unit, eg. hours, days, weeks, months"""
 	name = models.CharField(max_length=200)
+	def __unicode__(self):
+        return self.name
 
 class TaskStatus(models.Model):
 	"""Task status"""
 	name = models.CharField(max_length=200)
+	def __unicode__(self):
+        return self.name
 
 class ServiceCategory(models.Model):
 	"""ServiceCategory, eg. Nokia,SL3(LBF)"""
 	name = models.CharField(max_length=200)
+	def __unicode__(self):
+        return self.name
 
 class Currency(models.Model):
 	"""Currency list"""
