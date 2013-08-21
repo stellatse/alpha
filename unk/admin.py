@@ -14,6 +14,6 @@ class CustomerAdmin(admin.ModelAdmin):
 	inlines = [CustomerAccountInline]
 	list_display = ('username', 'full_name')
 
-admin.site.register(Customer, CustomerAdmin, Service)
+admin.site.register(Service)
 
 		
