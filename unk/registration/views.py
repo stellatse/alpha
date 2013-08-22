@@ -21,6 +21,7 @@ def login_view(request):
         login(request, user)
         if user.is_active:
             print("User is valid, active and authenticated")
+            redirect('home')
         else:
             print("The password is valid, but the account has been disabled!")
     else:
