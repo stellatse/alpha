@@ -1,6 +1,6 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth.models import User
-from django.contrib.auth import authenticate
+from django.contrib.auth import authenticate, login
 from django.core.context_processors import csrf
 from unk.registration.models import Customer, Country, TimeZone, CustomerType
 from unk.registration.forms import RegistrationForm
@@ -12,13 +12,13 @@ def home(request):
     return render(request, 'account/index.html')
 
 # json request ?
-def login(request):
+def login_view(request):
     ret = []
     username = request.POST['username']
     password = request.POST['password']
-    user = authenticate(username, password)
+    user = authenticate(username=username, password=password)
     if user is not None:
-        # the password verified for the user
+        login(request, user)
         if user.is_active:
             print("User is valid, active and authenticated")
         else:

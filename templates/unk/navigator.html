@@ -25,8 +25,8 @@
 					Welcome, {{ user.username }}.<a href="/logout" class="btn btn-success" data-toggle="modal">Log out</a>   
 					{% else %}
 					<form class="navbar-form" action="{% url 'login' %}" method="POST">{% csrf_token %}
-						<input class="span2" type="text" placeholder="Email"> <input
-							class="span2" type="password" placeholder="Password">
+						<input class="span2" type="text" placeholder="Email" name="username"> <input
+							class="span2" type="password" placeholder="Password" name="password">
 						<button type="submit" class="btn">Sign in</button>
 						<a href="#login-form" class="btn btn-success" data-toggle="modal">Sign
 							up</a>
