@@ -58,7 +58,3 @@ def register(request):
         customer = Customer(user=user, phone=phone, nation=country, address=address, timezone=tz, c_type=customer_type)
 
     return render(request, 'unk/index.html', ret)
-
-
-def logout(request):
-    return render(request, '')
