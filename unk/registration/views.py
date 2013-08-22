@@ -8,9 +8,6 @@ from unk.registration.forms import RegistrationForm
 import json
 import pytz
 
-def home(request):
-    return render(request, 'account/index.html')
-
 # json request ?
 def login_view(request):
     ret = []
