@@ -14,11 +14,5 @@ def home(request):
         'form': form
     })
 
-def logout(request):
+def logout_view(request):
     logout(request)
-    countries = Country.objects.all()
-    form = RegistrationForm({'timezone': 'UTC'})
-    return render(request, 'unk/index.html', {
-        'countries':countries, 
-        'form': form
-    })
