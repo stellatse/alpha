@@ -21,13 +21,17 @@
 					<tr>
 						<th>Name</th>
 						<th>Description</th>
+						<th>Price</th>
+						<th>Deleivery Time</th>
 					</tr>
 				</thead>
 				<tbody>
 					{% for service in services %}
 					<tr>
-						<td>{{ service.name }}</td>
+						<td><a href="{% url 'order_service' service.id %}">{{ service.name }}</a></td>
 						<td>{{ service.description }}</td>
+						<td>{{ service.value }} {{ service.currency }}</td>
+						<td>{{ service.commit_time_from }} - {{ service.commit_time_to }} {{ service.parameter }}</td>
 					</tr>
 					{% endfor %}
 				</tbody>
