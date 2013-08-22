@@ -8,5 +8,5 @@ urlpatterns = patterns('',
     url(r'^registration/', include('unk.registration.urls')),
     url(r'^admin/', include(admin.site.urls)),
     url(r'^s/', include('unk.task.urls')),
-    url(r'^logout', views.logout, name='logout')
+    url(r'^logout', unk.views.logout, name='logout')
 )
