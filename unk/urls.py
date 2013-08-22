@@ -1,6 +1,6 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
-from unk import views
+import unk.views
 admin.autodiscover()
 
 urlpatterns = patterns('',
