@@ -1,45 +1,35 @@
-{% extends "unk/base.html" %} {% block content %}
-<div class="container-fluid">
-  <div class="row-fluid">
-    <div class="span3">
-      <div class="well sidebar-nav">
-        <ul class="nav nav-list">
-          <li class="nav-header">menu</li>
-          <li class="active">Active</li>
-          <li>Next item</li>
-        </ul>
-      </div>
-    </div>
-    <div class="span9">
-      <ul class="nav nav-tabs">
-        <li class="active"><a href="#">Default</a></li>
-        <li><a href="#">By Category</a></li>
-        <li><a href="#">by xxx</a></li>
-      </ul>
-      <table class="table table-hover">
-        <thead>
-          <tr>
-            <th>Name</th>
-            <th>Description</th>
-            <th>Price</th>
-            <th>Deleivery Time</th>
-            <th>Order</th>
-          </tr>
-        </thead>
-        <tbody>
-          {% for service in services %}
-          <tr>
-            <td>{{ service.name }}</td>
-            <td>{{ service.description }}</td>
-            <td>{{ service.value }} {{ service.currency }}</td>
-            <td>{{ service.commit_time_from }} - {{ service.commit_time_to }} {{ service.parameter }}</td>
-            <td><a href="{% url 'order_service' service.id %}">Order</a></td>
-          </tr>
-          {% endfor %}
-        </tbody>
-      </table>
-    </div>
-  </div>
-</div>
+{% extends "unk/content.html" %} 
+{% block sidebar %}
+{% include "unk/services/service_sidebar.html" %}
+{% endblock %}
+
+{% block workbench %}
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#">Default</a></li>
+  <li><a href="#">By Category</a></li>
+  <li><a href="#">by xxx</a></li>
+</ul>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+      <th>Price</th>
+      <th>Deleivery Time</th>
+      <th>Order</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for service in services %}
+    <tr>
+      <td>{{ service.name }}</td>
+      <td>{{ service.description }}</td>
+      <td>{{ service.value }} {{ service.currency }}</td>
+      <td>{{ service.commit_time_from }} - {{ service.commit_time_to }} {{ service.parameter }}</td>
+      <td><a href="{% url 'order_service' service.id %}">Order</a></td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
 
 {% endblock %}
