@@ -1,9 +1,9 @@
 # Setup Development Environment
 [virtualenv](http://www.virtualenv.org/en/latest/index.html) is required to 
-establish a fresh development environment.
+establish a fresh development environment. Python 2.7 is required, since some package cannot run in Python 3
 
     mkdir pyenv
-    virtualenv pyenv
+    virtualenv -p /usr/bin/python2.7 pyenv
     source pyenv/bin/activate
 
 
@@ -15,6 +15,9 @@ install required tools and libraries
     pip install pytz
     pip install django-timezone-field
     pip install django-countries
+    pip install django-ajax-forms
+
+If install pytz failed, try 'easy_install pytz' instead
 
 Then checkout the latest source code, and start the site
 
