@@ -64,7 +64,7 @@ class Task(models.Model):
 	status = models.ForeignKey(TaskStatus)
 	task_type = models.ForeignKey(TaskType)
 	service = models.ForeignKey(Service)
-	imei = models.CharField(max_length=400)
+	imei = models.CharField(max_length=400, verbose_name="IMEI")
 	customer = models.ForeignKey(Customer)
 	submit_time = models.DateTimeField(auto_now_add=True)
 	supplier = models.ForeignKey(Supplier, null=True, blank=True)
