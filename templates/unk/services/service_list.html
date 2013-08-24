@@ -1,6 +1,10 @@
 {% extends "unk/content.html" %} 
 {% block sidebar %}
-{% include "unk/services/service_sidebar.html" %}
+<ul class="nav nav-list">
+  <li class="nav-header">menu</li>
+  <li class="active"><a href="{% url 'service_list' %}">Service list</a></li>
+  <li><a href="{% url 'task_list' %}">Task List</a></li>
+</ul>
 {% endblock %}
 
 {% block workbench %}

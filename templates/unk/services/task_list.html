@@ -1,0 +1,40 @@
+{% extends "unk/content.html" %} 
+{% block sidebar %}
+<ul class="nav nav-list">
+  <li class="nav-header">menu</li>
+  <li><a href="{% url 'service_list' %}">Service list</a></li>
+  <li class="active"><a href="{% url 'task_list' %}">Task List</a></li>
+</ul>
+{% endblock %}
+{% block workbench %}
+<ul class="nav nav-tabs">
+  <li class="active"><a href="#">Pending Job</a></li>
+  <li><a href="#">Processing Job</a></li>
+  <li><a href="#">Complete Job</a></li>
+  <li><a href="#">Reject Job</a></li>
+</ul>
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th>Date &amb; Time</th>
+      <th>IEMI</th>
+      <th>Service</th>
+      <th>Unlock Code</th>
+      <th>Status</th>
+      <th>Action</th>
+    </tr>
+  </thead>
+  <tbody>
+    {% for task in tasks %}
+    <tr>
+      <td>{{ task.submit_time }}</td>
+      <td>{{ task.imei }}</td>
+      <td>{{ task.service }}</td>
+      <td>Code ?</td>
+      <td>{{ task.status }}</td>
+      <td>Action ?</td>
+    </tr>
+    {% endfor %}
+  </tbody>
+</table>
+{% endblock %}
