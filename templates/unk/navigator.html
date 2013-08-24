@@ -22,7 +22,14 @@
 
         <div class="pull-right">
           {% if user.is_authenticated %}
-          Welcome, {{ user.username }}.<a href="/logout" class="btn btn-success" data-toggle="modal">Log out</a>   
+          <ul class="nav">
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#"> Welcome, <strong>{{ user.username }}</strong><b class="caret"></b></a>
+              <ul class="dropdown-menu pull-right">
+                <li><a href="{% url 'logout' %}">Log out</a></li>
+              </ul>
+            </li>
+          </ul>
           {% else %}
           <form class="navbar-form" action="{% url 'login' %}" method="POST">{% csrf_token %}
             <input class="span2" type="text" placeholder="Email" name="username"> <input
