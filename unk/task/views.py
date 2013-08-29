@@ -12,14 +12,18 @@ def service_list(request):
 	}
 	return render(request, 'unk/services/service_list.html', context)
 
+@login_required
 def task_list(request):
 	return render(request, 'unk/services/task_list.html', {
 		'tasks': Task.objects.all()
 	})
+
 @login_required
 def order_service(request, service_id):
 	try:
 		service = Service.objects.get(pk=service_id)
+		if request.method == 'POST':
+			pass
 
 	except Service.DoesNotExist:
 		raise Http404

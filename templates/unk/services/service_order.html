@@ -20,7 +20,7 @@
   <div class="control-group">
   	<label class="control-label" for="delivery">Delivery time</label>
   	<div class="controls">
-  		<input type="text" value="Delivery time from server side" readonly />
+  		<input type="text" value="{{ service.commit_time_from }} - {{ service.commit_time_to }} {{ service.parameter }}" readonly />
   	</div>
   </div>
   {% load crispy_forms_tags %}
