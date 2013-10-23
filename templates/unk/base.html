@@ -42,8 +42,9 @@ $(function() {
 		  action="{% url 'register' %}" >
 		  {% csrf_token %}
       <div class="modal-body">
-        {% load crispy_forms_tags %}
-				{{ form | crispy }}
+    <!--    {% load crispy_forms_tags %}
+    {{ form | crispy }} -->
+    {% include "unk/forms.html" %}
 			</div>
 			<div class="modal-footer">
 			<input type="submit" value="Submit" class="btn btn-success" />

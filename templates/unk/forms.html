@@ -22,8 +22,8 @@
 	<div class="control-group">
 		<label class="control-label" for="nation">Nation</label>
 		<div class="controls">
-			<select id="nation" name="nation"> {% for country in
-				countries %}
+      <select id="nation" name="nation"> 
+        {% for country in countries %}
 				<option value="{{ country.iso_3166_1_numeric }}">{{ country }}</option>
 				{% endfor %}
 			</select>
@@ -33,10 +33,10 @@
 	<div class="control-group">
 		<label class="control-label" for="timezone">Timezone</label>
 		<div class="controls">
-			<select id="timezone" name="timezone"> {% for tz in
-				timezones %}
-				<option value="{{ tz }}" {% if tz== TIME_ZONE %} selected="selected"{% endif %}>{{
-					tz }}</option> {% endfor %}
+      <select id="timezone" name="timezone"> 
+        {% for tz in timezones %}
+				<option value="{{ tz }}" {% if tz == TIME_ZONE %} selected="selected"{% endif %}>{{	tz }}</option> 
+        {% endfor %}
 			</select>
 		</div>
 	</div>

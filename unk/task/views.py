@@ -7,7 +7,8 @@ from unk.task.forms import TaskForm
 
 def service_list(request):
 	services = Service.objects.all()
-	context = {
+	print services
+        context = {
 		'services': services
 	}
 	return render(request, 'unk/services/service_list.html', context)
