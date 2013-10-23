@@ -25,4 +25,5 @@ Then checkout the latest source code, and start the site
     cd alpha
     python manage.py syncdb
     python manage.py loaddata unk/countries.json
-    python manage.py runserver
+    python manage.py loaddata unk/initia_data.json
+    python manage.py runserver 0.0.0.0:8080
